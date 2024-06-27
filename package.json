@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "tailwindcss -i src/index.css -o build/output.css && html-minifier --input-dir src --output-dir build --file-ext html --collapse-whitespace --remove-comments --minify-css --minify-js --minify-urls --remove-attribute-quotes --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --sort-attributes --sort-class-name && ./scripts/convert-images.sh",
+    "start": "serve build"
+  },
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "tailwindcss": "^3.4.4"
+  }
+}

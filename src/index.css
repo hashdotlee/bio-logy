@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-blue-500 inline-flex h-10 items-center justify-center text-white font-bold cursor-pointer px-4 rounded;
+  }
+
+  .btn-icon {
+    @apply rounded-full p-2 w-10 h-10 bg-cover bg-center bg-no-repeat;
+  }
+}
+
+@layer utilities {
+  .text-h3 {
+    @apply text-3xl font-bold;
+  }
+  .text-h4 {
+    @apply text-2xl font-bold;
+  }
+  .text-h5 {
+    @apply text-xl font-bold;
+  }
+  .text-h6 {
+    @apply text-lg font-bold;
+  }
+  .text-body {
+    @apply text-base;
+  }
+  .text-caption {
+    @apply text-sm;
+  }
+  .cover-image {
+    @apply w-full h-full object-cover object-center;
+  }
+  .divider {
+	@apply border-t border-gray-300 my-8;
+  }
+}
